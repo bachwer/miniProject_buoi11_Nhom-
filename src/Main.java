@@ -14,16 +14,11 @@ public class Main {
         for (Drink drink : drinks) {
 
             if (drink != null) {
-
+                drink.mix();
                 drink.displayInfo();
 
                 System.out.println("Thành tiền: "
                         + drink.calculatePrice());
-
-
-                if (drink instanceof IMixable) {
-                    ((IMixable) drink).mix();
-                }
 
                 System.out.println("-------------------");
             }
